@@ -80,12 +80,44 @@ layout: center
 <p v-click>两种搜索模式都可以划分成以下 5 个阶段：</p>
 
 <ol>
-  <li v-click>触发阶段（需求诞生）</li>
-  <li v-click>输入阶段（信息表达）</li>
-  <li v-click>处理阶段（等待与交互）</li>
-  <li v-click>反馈阶段（结果处理）</li>
-  <li v-click>后续阶段（行为延伸）</li>
+  <li v-click>
+    <p>触发阶段（需求诞生）</p>
+    🤔 <cite>为什么要进行搜索？</cite>
+  </li>
+  <li v-click>
+    <p>输入阶段（信息表达）</p>
+    🤔 <cite>要搜索什么？</cite>
+  </li>
+  <li v-click>
+    <p>处理阶段（等待与交互）</p>
+    🤔 <cite>搜索过程中发生了什么？</cite>
+  </li>
+  <li v-click>
+    <p>反馈阶段（结果处理）</p>
+    🤔 <cite>搜索结果返回后要如何处理？</cite>
+  </li>
+  <li v-click>
+    <p>后续阶段（行为延伸）</p>
+    🤔 <cite>搜索结束后要做什么？</cite>
+  </li>
 </ol>
+
+<style>
+.slidev-layout li {
+  line-height: 10px;
+}
+cite {
+  opacity: 0.6;
+}
+</style>
+
+---
+layout: center
+---
+
+# ffda
+
+fdsafd
 
 ---
 
