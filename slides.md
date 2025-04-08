@@ -73,6 +73,22 @@ layout: center
 
 ---
 
+# 2. 搜索流程有哪些变化？
+
+<p v-click>从定义上看，AI 搜索貌似很 “高大上”，但从搜索流程上看，它和传统搜索并无二致。</p>
+
+<p v-click>两种搜索模式都可以划分成以下 5 个阶段：</p>
+
+<ol>
+  <li v-click>触发阶段（需求诞生）</li>
+  <li v-click>输入阶段（信息表达）</li>
+  <li v-click>处理阶段（等待与交互）</li>
+  <li v-click>反馈阶段（结果处理）</li>
+  <li v-click>后续阶段（行为延伸）</li>
+</ol>
+
+---
+
 # Navigation
 
 Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
