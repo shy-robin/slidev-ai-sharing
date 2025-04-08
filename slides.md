@@ -3,9 +3,9 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: ./bg.png
+background: ./assets/bg.png
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: AI 搜索
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -26,48 +26,44 @@ mdc: true
 
 AI 搜索产品功能调研与思考
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+---
+layout: center
+---
+
+# 1. 什么是 AI 搜索？🤔
 
 ---
 
-# What is Slidev?
+# 1. 什么是 AI 搜索？
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+<cite>
+AI 搜索（AI-Powered Search）是一种基于人工智能技术的新一代信息检索方式，它通过自然语言处理（NLP）、大语言模型（LLM）、知识图谱等技术，
+<u>直接理解用户意图并提供结构化答案</u>，而非仅仅返回网页链接列表。其核心目标是<u>从 “信息匹配” 升级为 “问题解决”</u>。
+</cite>
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-  <br>
-  <br>
+<p v-click class="opacity-50">简单来讲，带来了以下变化：</p>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
+<div class="flex gap-4 items-center">
+  <div v-click class="grow shrink-0">
+    <strong>传统搜索</strong>
+    <ul>
+      <li>搜素引擎：“图书管理员”</li>
+      <li>信息获取：“人找信息”</li>
+    </ul>
+    <img src="./assets/1.png" class="w-50 mt-4" />
+  </div>
+  <div v-click class="relative w-20 -translate-x-20">
+    <arrow x1="0" y1="20" x2="80" y2="20" color="#953" width="2" arrowSize="1" />
+  </div>
+  <div v-click class="grow shrink-0">
+    <strong>AI 搜索</strong>
+    <ul>
+      <li>搜素引擎：“专业顾问”</li>
+      <li>信息获取：“信息为人服务”</li>
+    </ul>
+    <img src="./assets/2.png" class="w-50 mt-4" />
+  </div>
+</div>
 
 ---
 
@@ -544,6 +540,21 @@ Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML D
 foo: bar
 dragPos:
 square: 691,32,167,\_,-16
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
 
 ---
 
