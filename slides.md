@@ -1,9 +1,9 @@
 ---
 # You can also start simply with 'default'
-theme: default
+theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+background: ./bg.png
 # some information about your slides (markdown enabled)
 title: Welcome to Slidev
 info: |
@@ -17,38 +17,20 @@ class: text-center
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
+transition: fade
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-# open graph
-# seoMeta:
-#  ogImage: https://cover.sli.dev
 ---
 
-# Welcome to Slidev
+# AI 搜索
 
-Presentation slides for developers
-
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div>
-
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
-</div>
+AI 搜索产品功能调研与思考
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
 ---
-
-## transition: fade-out
 
 # What is Slidev?
 
@@ -86,11 +68,6 @@ h1 {
 <!--
 Here is another comment.
 -->
-
----
-
-transition: slide-up
-level: 2
 
 ---
 
@@ -569,8 +546,58 @@ dragPos:
 square: 691,32,167,\_,-16
 
 ---
+
 dragPos:
-  square: -7,-96,0,0
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+
+dragPos:
+square: -8,0,0,0
+
+---
+dragPos:
+  square: -8,0,0,0
 ---
 
 # Draggable Elements
