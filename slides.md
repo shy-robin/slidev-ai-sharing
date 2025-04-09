@@ -330,7 +330,6 @@ layout: center
 
 <p v-click="6" class="opacity-50">🤔 如何降低这种 AI 幻觉出现的概率？</p>
 
-
 <ul>
   <li v-click="7">
     限定条件
@@ -435,10 +434,10 @@ layout: center
 
 双端差异
 
-|  PC 端                                                        |              移动端                                            |
-| ------------------------------------------------------------- | -------------------------------------------------------------- |
-|   网速稳定，布局宽松，功能精细                                | 网速波动大，布局紧凑                                           |
-| <img src="./assets/1.png" class="w-80 h-80 object-contain" /> | <img src="./assets/1.png" class="w-80 h-80 object-contain" />  |
+| PC 端                                                         | 移动端                                                        |
+| ------------------------------------------------------------- | ------------------------------------------------------------- |
+| 网速稳定，布局宽松，功能精细                                  | 网速波动大，布局紧凑                                          |
+| <img src="./assets/1.png" class="w-80 h-80 object-contain" /> | <img src="./assets/1.png" class="w-80 h-80 object-contain" /> |
 
 ---
 
@@ -449,7 +448,8 @@ DOM 结构设计
 ```html {all|4-5|8-16|all} twoslash
 <div class="ai-answer-block">
   <!-- 答案文本 -->
-  <p>{answer}
+  <p>
+    {answer}
     <!-- 来源标记 -->
     <sup class="source-marker" data-source-id="s123">[1]</sup>
   </p>
@@ -461,7 +461,7 @@ DOM 结构设计
       <span class="trust-score">{`可信度 ${percent}%`}</span>
     </div>
     <div class="preview-content">{summary}</div>
-    <a class="full-link" href={url}>查看全文 →</a>
+    <a class="full-link" href="{url}">查看全文 →</a>
   </div>
 </div>
 ```
@@ -474,11 +474,13 @@ DOM 结构设计
 
 ```js {all|1-3|4|5-6|7-11|15-21|all} twoslash
 // 给每个来源标记添加点击事件
-document.querySelectorAll('.source-marker').forEach(marker => {
-  marker.addEventListener('click', (e) => {
-    const container = e.target.closest('.ai-answer-block').querySelector('.source-preview');
+document.querySelectorAll(".source-marker").forEach((marker) => {
+  marker.addEventListener("click", (e) => {
+    const container = e.target
+      .closest(".ai-answer-block")
+      .querySelector(".source-preview");
     // 切换显示状态
-    container.classList.toggle('hidden');
+    container.classList.toggle("hidden");
     // 延迟加载内容（性能优化）
     if (!container.dataset.loaded) {
       loadSourceCards(container.dataset.sourceIds);
@@ -491,8 +493,8 @@ document.querySelectorAll('.source-marker').forEach(marker => {
 async function loadSourceCards(ids) {
   const res = await fetch(`/api/sources?ids=${ids}`);
   const sources = await res.json();
-  const container = document.querySelector('.source-preview');
-  container.innerHTML = sources.map(createCardHTML).join('');
+  const container = document.querySelector(".source-preview");
+  container.innerHTML = sources.map(createCardHTML).join("");
 }
 ```
 
