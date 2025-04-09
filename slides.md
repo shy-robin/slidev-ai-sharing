@@ -359,55 +359,60 @@ layout: center
 
 市面上这么多的 AI 搜索产品，基本上都提供了交叉验证能力，无非可以分为以下几种形式：
 
-<ul>
-  <li v-click="1">
-    来源追溯型验证
+<div class="flex gap-4">
+  <ul class="w-120">
+    <li v-click="1">
+      来源追溯型验证
     <li v-click="2">
-      引用来源直链（Perplexity.ai）
-      <li v-click="[3,5]">每个生成段落右侧显示数字角标¹²³</li>
-      <li v-click="[4,5]">点击后展开来源网站卡片（包含标题、域名、摘要）</li>
+      引用来源直链（<a href="https://www.perplexity.ai">Perplexity.ai</a>）
+    <li v-click="[3,5]">每个生成段落右侧显示数字角标¹²³</li>
+    <li v-click="[4,5]">点击后展开来源网站卡片（包含标题、域名、摘要）</li>
     </li>
     <li v-click="5">
       论文支撑标注（Consensus）
-      <li v-click="[6,8]">答案下方显示“Supported by X studies”</li>
-      <li v-click="[7,8]">鼠标悬停展示论文标题、期刊、发表年份</li>
+    <li v-click="[6,8]">答案下方显示“Supported by X studies”</li>
+    <li v-click="[7,8]">鼠标悬停展示论文标题、期刊、发表年份</li>
     </li>
-  </li>
-  <li v-click="8">
-    动态可信度提示
+    </li>
+    <li v-click="8">
+      动态可信度提示
     <li v-click="9">
       实时置信度评分（Scite）
-      <li v-click="[10,12]">答案旁显示动态进度条（如“可信度 82%”）</li>
-      <li v-click="[11,12]">根据引用类型（支持/反对）显示不同颜色</li>
+    <li v-click="[10,12]">答案旁显示动态进度条（如“可信度 82%”）</li>
+    <li v-click="[11,12]">根据引用类型（支持/反对）显示不同颜色</li>
     </li>
     <li v-click="12">
       时间线验证（Google SGE）
-      <li v-click="[13,15]">关键事实旁显示“2024年7月最新数据”</li>
-      <li v-click="[14,15]">时间敏感内容添加时钟图标⚠️</li>
+    <li v-click="[13,15]">关键事实旁显示“2024年7月最新数据”</li>
+    <li v-click="[14,15]">时间敏感内容添加时钟图标⚠️</li>
     </li>
-  </li>
-  <li v-click="15">
-    交互式验证探索
+    </li>
+    <li v-click="15">
+      交互式验证探索
     <li v-click="16">
       证据链展开（Elicit）
-      <li v-click="[17,19]">点击“查看推理过程”展示逻辑推导步骤</li>
-      <li v-click="[18,19]">每个步骤可展开查看支撑论文片段</li>
+    <li v-click="[17,19]">点击“查看推理过程”展示逻辑推导步骤</li>
+    <li v-click="[18,19]">每个步骤可展开查看支撑论文片段</li>
     </li>
     <li v-click="19">
       多版本答案对比（You.com）
-      <li v-click="[20,22]">侧边栏展示不同模型生成的答案版本</li>
-      <li v-click="[21,22]">用户可滑动对比GPT-4/Claude/Palm的输出</li>
+    <li v-click="[20,22]">侧边栏展示不同模型生成的答案版本</li>
+    <li v-click="[21,22]">用户可滑动对比GPT-4/Claude/Palm的输出</li>
     </li>
-  </li>
-  <li v-click="22">
-    技术指标型验证
+    </li>
+    <li v-click="22">
+      技术指标型验证
     <li v-click="23">
       代码验证沙盒（Phind）
-      <li v-click="[24,26]">代码答案旁显示“运行验证”按钮</li>
-      <li v-click="[25,26]">点击后在线执行代码并显示结果</li>
+    <li v-click="[24,26]">代码答案旁显示“运行验证”按钮</li>
+    <li v-click="[25,26]">点击后在线执行代码并显示结果</li>
     </li>
-  </li>
-</ul>
+    </li>
+  </ul>
+  <div class="w-85 h-85">
+    <img v-click="[2,5]" src="./assets/21.png" class="w-full h-full object-contain" />
+  </div>
+</div>
 
 <style>
 .slidev-vclick-hidden {
