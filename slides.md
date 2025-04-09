@@ -115,7 +115,7 @@ cite {
 layout: center
 ---
 
-# 为什么要进行搜索？
+# 2.1 为什么要进行搜索？
 
 <TimeLine :index="0" />
 
@@ -142,7 +142,7 @@ layout: center
 layout: center
 ---
 
-# 要搜索什么？
+# 2.2 要搜索什么？
 
 <TimeLine :index="1" />
 
@@ -183,7 +183,7 @@ layout: center
 layout: center
 ---
 
-# 搜索过程中发生了什么？
+# 2.3 搜索过程中发生了什么？
 
 <TimeLine :index="2" />
 
@@ -216,7 +216,7 @@ layout: center
 layout: center
 ---
 
-# 搜索结果返回后要如何处理？
+# 2.4 搜索结果返回后要如何处理？
 
 <TimeLine :index="3" />
 
@@ -247,7 +247,7 @@ layout: center
 layout: center
 ---
 
-# 搜索结束后要做什么？
+# 2.5 搜索结束后要做什么？
 
 <TimeLine :index="4" />
 
@@ -273,6 +273,36 @@ layout: center
   display: none;
 }
 </style>
+
+---
+layout: center
+---
+
+# 3. 聚焦在哪块？
+
+---
+layout: center
+---
+
+# 📌 搜索结果返回后要如何处理？
+
+<TimeLine :index="3" />
+
+<div class="w-180 h-80 flex">
+  <div class="w-90">
+    <ul>
+      <li>直接采纳</li>
+      <li>
+        <span v-mark.circle.orange>交叉验证</span>
+      </li>
+      <li>主动修正</li>
+      <li>多轮对话</li>
+    </ul>
+  </div>
+  <div>
+    <img src="./assets/14.png" class="w-80 h-80 object-contain" />
+  </div>
+</div>
 
 ---
 
