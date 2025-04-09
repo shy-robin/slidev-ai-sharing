@@ -421,6 +421,16 @@ layout: center
 </style>
 
 ---
+layout: center
+---
+
+# 6. 前端是如何实现的？
+
+---
+
+# 6. 前端是如何实现的？
+
+---
 
 # Navigation
 
