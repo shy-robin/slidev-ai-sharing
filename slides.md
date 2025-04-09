@@ -115,9 +115,64 @@ cite {
 layout: center
 ---
 
-# ffda
+# 为什么要进行搜索？
 
-fdsafd
+<TimeLine :index="0" />
+
+<div class="h-80 flex">
+  <div class="w-90">
+    <ul>
+      <li v-click>主动触发：比如写论文需要查一些资料</li>
+      <li v-click>被动触发：比如系统推送了一条通知</li>
+    </ul>
+  </div>
+  <div>
+    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
+    <img v-click="2" src="./assets/2.png" class="w-50" />
+  </div>
+</div>
+
+<style>
+.slidev-vclick-hidden {
+  display: none;
+}
+</style>
+
+---
+layout: center
+---
+
+# 要搜索什么？
+
+<TimeLine :index="1" />
+
+<div class="h-80 bg-gray-100"></div>
+
+---
+layout: center
+---
+
+# 搜索过程中发生了什么？
+
+<TimeLine :index="2" />
+
+<div class="h-80 bg-gray-100"></div>
+
+---
+layout: center
+---
+
+# 搜索结果返回后要如何处理？
+
+<TimeLine :index="3" />
+
+---
+layout: center
+---
+
+# 搜索结束后要做什么？
+
+<TimeLine :index="4" />
 
 ---
 
