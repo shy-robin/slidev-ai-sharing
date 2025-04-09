@@ -362,7 +362,7 @@ layout: center
 <div class="flex gap-4">
   <ul class="w-120">
     <li v-click="1">
-      来源追溯型验证
+      <span v-mark.circle.orange="24">来源追溯型验证</span>
     <li v-click="2">
       引用来源直链（<a href="https://www.perplexity.ai">Perplexity.ai</a>）
     <li v-click="[3,5]">每个生成段落右侧显示数字角标¹²³</li>
