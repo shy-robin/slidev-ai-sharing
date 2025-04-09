@@ -198,11 +198,11 @@ layout: center
     </ul>
   </div>
   <div>
-    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
-    <img v-click="[2,3]" src="./assets/2.png" class="w-50" />
-    <img v-click="[3,4]" src="./assets/1.png" class="w-50" />
-    <img v-click="[4,5]" src="./assets/2.png" class="w-50" />
-    <img v-click="5" src="./assets/1.png" class="w-50" />
+    <img v-click="[1,2]" src="./assets/8.png" class="w-80 h-80 object-contain" />
+    <img v-click="[2,3]" src="./assets/9.png" class="w-80 h-80 object-contain" />
+    <img v-click="[3,4]" src="./assets/10.png" class="w-80 h-80 object-contain" />
+    <img v-click="[4,5]" src="./assets/11.png" class="w-80 h-80 object-contain" />
+    <img v-click="5" src="./assets/12.png" class="w-80 h-80 object-contain" />
   </div>
 </div>
 
@@ -230,10 +230,10 @@ layout: center
     </ul>
   </div>
   <div>
-    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
-    <img v-click="[2,3]" src="./assets/2.png" class="w-50" />
-    <img v-click="[3,4]" src="./assets/1.png" class="w-50" />
-    <img v-click="4" src="./assets/2.png" class="w-50" />
+    <img v-click="[1,2]" src="./assets/13.png" class="w-80 h-80 object-contain" />
+    <img v-click="[2,3]" src="./assets/14.png" class="w-80 h-80 object-contain" />
+    <img v-click="[3,4]" src="./assets/15.png" class="w-80 h-80 object-contain" />
+    <img v-click="4" src="./assets/16.png" class="w-80 h-80 object-contain" />
   </div>
 </div>
 
@@ -261,10 +261,10 @@ layout: center
     </ul>
   </div>
   <div>
-    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
-    <img v-click="[2,3]" src="./assets/2.png" class="w-50" />
-    <img v-click="[3,4]" src="./assets/1.png" class="w-50" />
-    <img v-click="4" src="./assets/2.png" class="w-50" />
+    <img v-click="[1,2]" src="./assets/17.png" class="w-80 h-80 object-contain" />
+    <img v-click="[2,3]" src="./assets/18.png" class="w-80 h-80 object-contain" />
+    <img v-click="[3,4]" src="./assets/19.png" class="w-80 h-80 object-contain" />
+    <img v-click="4" src="./assets/20.png" class="w-80 h-80 object-contain" />
   </div>
 </div>
 
