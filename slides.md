@@ -495,3 +495,9 @@ async function loadSourceCards(ids) {
   container.innerHTML = sources.map(createCardHTML).join('');
 }
 ```
+
+---
+layout: center
+---
+
+# 7. 哪些地方可以优化？
