@@ -119,7 +119,7 @@ layout: center
 
 <TimeLine :index="0" />
 
-<div class="h-80 flex">
+<div class="w-180 h-80 flex">
   <div class="w-90">
     <ul>
       <li v-click>主动触发：比如写论文需要查一些资料</li>
@@ -127,8 +127,8 @@ layout: center
     </ul>
   </div>
   <div>
-    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
-    <img v-click="2" src="./assets/2.png" class="w-50" />
+    <img v-click="[1,2]" src="./assets/3.png" class="w-80 h-80 object-cover" />
+    <img v-click="2" src="./assets/4.png" class="w-80 h-80 object-cover" />
   </div>
 </div>
 
@@ -146,7 +146,7 @@ layout: center
 
 <TimeLine :index="1" />
 
-<div class="h-80 flex">
+<div class="w-180 h-80 flex">
   <div class="w-90">
     <ul>
       <li v-click>
@@ -167,8 +167,9 @@ layout: center
     </ul>
   </div>
   <div>
-    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
-    <img v-click="2" src="./assets/2.png" class="w-50" />
+    <img v-click="[1,2]" src="./assets/5.png" class="w-80 h-80 object-cover" />
+    <img v-click="[2,3]" src="./assets/6.png" class="w-80 h-80 object-cover" />
+    <img v-click="3" src="./assets/7.png" class="w-80 h-80 object-cover" />
   </div>
 </div>
 
@@ -186,7 +187,7 @@ layout: center
 
 <TimeLine :index="2" />
 
-<div class="h-80 flex">
+<div class="w-180 h-80 flex">
   <div class="w-90">
     <ul>
       <li v-click>等待响应</li>
@@ -219,7 +220,7 @@ layout: center
 
 <TimeLine :index="3" />
 
-<div class="h-80 flex">
+<div class="w-180 h-80 flex">
   <div class="w-90">
     <ul>
       <li v-click>直接采纳</li>
@@ -250,7 +251,7 @@ layout: center
 
 <TimeLine :index="4" />
 
-<div class="h-80 flex">
+<div class="w-180 h-80 flex">
   <div class="w-90">
     <ul>
       <li v-click>收藏或订阅相关主题</li>
