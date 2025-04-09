@@ -335,11 +335,23 @@ layout: center
     <li v-click="9">“从以下规定的渠道获取信息”，RAG</li>
   </li>
   <li v-click="10">
-    交叉验证
+    <span v-mark.circle.orange="13">交叉验证</span>
     <li v-click="11">标注来源，用户验证</li>
     <li v-click="12">多模型验证</li>
   </li>
 </ul>
+
+---
+layout: center
+---
+
+# 5. 交叉验证有哪些形式？
+
+---
+layout: center
+---
+
+<WordCloud />
 
 ---
 

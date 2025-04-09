@@ -1798,6 +1798,11 @@ argparse@^2.0.1:
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
+b2wordcloud@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/b2wordcloud/-/b2wordcloud-2.0.2.tgz#87426860a8a95019e6d1f2acf5de7d1c451a5ff2"
+  integrity sha512-VF5S5S3SY/xyqjgVnfHp0eRv+elC0ePMJxY2KssuSzqGOn8yruMRWQLcvuGd8u8j5F1woKzUo8GQdjmbLG9fvQ==
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
