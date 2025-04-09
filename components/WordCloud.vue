@@ -49,7 +49,10 @@ onMounted(() => {
         ["ThinkAny", 22],
         ["Miku", 36],
         ["BiLin", 46],
+        ["Scite", 40],
         ["Accio", 36],
+        ["Wolfram Alpha", 20],
+        ["Elicit", 44],
         ["Lepton Search", 62],
       ],
       tooltip: {
