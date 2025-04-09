@@ -177,6 +177,9 @@ layout: center
 .slidev-vclick-hidden {
   display: none;
 }
+.slidev-layout li {
+  line-height: 1.8rem;
+}
 </style>
 
 ---
