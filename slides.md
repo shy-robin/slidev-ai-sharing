@@ -146,7 +146,37 @@ layout: center
 
 <TimeLine :index="1" />
 
-<div class="h-80 bg-gray-100"></div>
+<div class="h-80 flex">
+  <div class="w-90">
+    <ul>
+      <li v-click>
+        文本输入
+        <li>直接提问</li>
+        <li>关键词堆砌</li>
+      </li>
+      <li v-click>
+        多模态
+        <li>图像</li>
+        <li>语音</li>
+      </li>
+      <li v-click>
+        历史记录复用
+        <li>搜索推荐</li>
+        <li>搜索历史</li>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
+    <img v-click="2" src="./assets/2.png" class="w-50" />
+  </div>
+</div>
+
+<style>
+.slidev-vclick-hidden {
+  display: none;
+}
+</style>
 
 ---
 layout: center
@@ -156,7 +186,30 @@ layout: center
 
 <TimeLine :index="2" />
 
-<div class="h-80 bg-gray-100"></div>
+<div class="h-80 flex">
+  <div class="w-90">
+    <ul>
+      <li v-click>等待响应</li>
+      <li v-click>内容展示</li>
+      <li v-click>中途放弃</li>
+      <li v-click>错误重试</li>
+      <li v-click>会话恢复</li>
+    </ul>
+  </div>
+  <div>
+    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
+    <img v-click="[2,3]" src="./assets/2.png" class="w-50" />
+    <img v-click="[3,4]" src="./assets/1.png" class="w-50" />
+    <img v-click="[4,5]" src="./assets/2.png" class="w-50" />
+    <img v-click="5" src="./assets/1.png" class="w-50" />
+  </div>
+</div>
+
+<style>
+.slidev-vclick-hidden {
+  display: none;
+}
+</style>
 
 ---
 layout: center
@@ -166,6 +219,29 @@ layout: center
 
 <TimeLine :index="3" />
 
+<div class="h-80 flex">
+  <div class="w-90">
+    <ul>
+      <li v-click>直接采纳</li>
+      <li v-click>交叉验证</li>
+      <li v-click>主动修正</li>
+      <li v-click>多轮对话</li>
+    </ul>
+  </div>
+  <div>
+    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
+    <img v-click="[2,3]" src="./assets/2.png" class="w-50" />
+    <img v-click="[3,4]" src="./assets/1.png" class="w-50" />
+    <img v-click="4" src="./assets/2.png" class="w-50" />
+  </div>
+</div>
+
+<style>
+.slidev-vclick-hidden {
+  display: none;
+}
+</style>
+
 ---
 layout: center
 ---
@@ -173,6 +249,29 @@ layout: center
 # 搜索结束后要做什么？
 
 <TimeLine :index="4" />
+
+<div class="h-80 flex">
+  <div class="w-90">
+    <ul>
+      <li v-click>收藏或订阅相关主题</li>
+      <li v-click>加入知识库</li>
+      <li v-click>导出结构化数据</li>
+      <li v-click>转换成其他操作</li>
+    </ul>
+  </div>
+  <div>
+    <img v-click="[1,2]" src="./assets/1.png" class="w-50" />
+    <img v-click="[2,3]" src="./assets/2.png" class="w-50" />
+    <img v-click="[3,4]" src="./assets/1.png" class="w-50" />
+    <img v-click="4" src="./assets/2.png" class="w-50" />
+  </div>
+</div>
+
+<style>
+.slidev-vclick-hidden {
+  display: none;
+}
+</style>
 
 ---
 
