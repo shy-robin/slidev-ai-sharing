@@ -305,6 +305,43 @@ layout: center
 </div>
 
 ---
+layout: center
+---
+
+# 4. 交叉验证是什么？
+
+---
+
+# 4. 交叉验证是什么？
+
+🤔 AI 给出答案一定是正确的吗？
+
+<ul>
+  <li v-click>🙅</li>
+  <li v-click>学习海量的数据和背后的语言规律，再根据你提问的上文，预测可能出现的下文</li>
+  <li v-click>“一本正经地胡说八道”，表面看似合理，实则缺乏事实依据</li>
+  <li v-click>
+    <span v-mark.circle.orange="5">AI 幻觉</span>
+  </li>
+</ul>
+
+<p v-click="6" class="opacity-50">🤔 如何降低这种 AI 幻觉出现的概率？</p>
+
+
+<ul>
+  <li v-click="7">
+    限定条件
+    <li v-click="8">“联网搜索”，获取最新数据</li>
+    <li v-click="9">“从以下规定的渠道获取信息”，RAG</li>
+  </li>
+  <li v-click="10">
+    交叉验证
+    <li v-click="11">标注来源，用户验证</li>
+    <li v-click="12">多模型验证</li>
+  </li>
+</ul>
+
+---
 
 # Navigation
 
