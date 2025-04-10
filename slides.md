@@ -577,6 +577,77 @@ function mergeDuplicateSources() {
 ```
 
 ---
+layout: center
+---
+
+# 8. 还有一些别的想法？
+
+---
+
+# 8. 还有一些别的想法？
+
+8.1 可信度可视化：引入颜色编码、评分系统等直观指标
+
+```js {all} twoslash
+// 添加可信度指示器
+<div className="source-meta">
+  <span className="domain">{source.domain}</span>
+  <div className="trust-score">
+    <div className="score-bar" style={{ width: `${source.trustScore}%` }} />
+    <span>可信度 {source.trustScore}%</span>
+  </div>
+</div>
+```
+
+---
+
+# 8. 还有一些别的想法？
+
+8.2 关系网络展示：揭示来源之间的引用关联模式（学术论文场景较多，显示引用关系）
+
+```js {all} twoslash
+// 使用力导向图展示来源关联
+import ForceGraph from "react-force-graph";
+
+<ForceGraph
+  nodes={sources.map((s) => ({ id: s.id, name: s.domain }))}
+  links={sourceRelations}
+  nodeAutoColorBy="group"
+  linkDirectionalArrowLength={6}
+/>;
+```
+
+---
+
+# 8. 还有一些别的想法？
+
+8.3 更丰富的交互形态
+
+<div v-click="[1,2]">
+  <span>预览 PDF</span>
+  <img src="./assets/27.png" class="w-160 h-100 object-contain" />
+</div>
+
+<div v-click="[2,3]">
+  <span>标签与侧边栏联动，类似于手风琴的效果</span>
+  <img src="./assets/28.png" class="w-160 h-100 object-contain" />
+</div>
+
+<div v-click="3">
+  <span>预览视频</span>
+  <div class="flex items-center gap-4">
+    <img src="./assets/29.png" class="w-100 h-75 object-contain" />
+    <img src="./assets/30.png" class="w-124 h-75 object-contain" />
+  </div>
+</div>
+
+<style>
+.slidev-vclick-hidden {
+  display: none;
+}
+</style>
+
+---
 layout: end
 ---
 
