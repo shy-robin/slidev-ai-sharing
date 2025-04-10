@@ -503,3 +503,31 @@ layout: center
 ---
 
 # 7. 哪些地方可以优化？
+
+---
+
+# 7. 哪些地方可以优化？
+
+7.1 预加载（解决首次点击时加载延迟）
+
+```js {all|11-13|1-3|4-7|all} twoslash
+// 预加载首屏可见区域的来源数据
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const sourceIds = entry.target.dataset.sourceIds;
+      prefetchSources(sourceIds); // 提前发起请求
+    }
+  });
+});
+
+document.querySelectorAll(".ai-answer-block").forEach((segment) => {
+  observer.observe(segment);
+});
+```
+
+---
+layout: end
+---
+
+# Thank You
