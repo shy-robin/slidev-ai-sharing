@@ -527,6 +527,27 @@ document.querySelectorAll(".ai-answer-block").forEach((segment) => {
 ```
 
 ---
+
+# 7. 哪些地方可以优化？
+
+7.2 智能优先级加载
+
+```js {all|4|5|6-11|all} twoslash
+// 根据用户行为预测加载来源
+let predictionTimeout;
+
+document.addEventListener("mousemove", (e) => {
+  const hoveredMarker = e.target.closest(".source-marker");
+  if (hoveredMarker) {
+    clearTimeout(predictionTimeout);
+    predictionTimeout = setTimeout(() => {
+      loadSourceCards(hoveredMarker.dataset.sourceIds);
+    }, 200); // 200ms 悬停预加载
+  }
+});
+```
+
+---
 layout: end
 ---
 
