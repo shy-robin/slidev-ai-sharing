@@ -548,6 +548,35 @@ document.addEventListener("mousemove", (e) => {
 ```
 
 ---
+
+# 7. 哪些地方可以优化？
+
+7.3 跨段落来源聚合
+
+```js {all|3|5|6|7-9|10-12|15-19|all} twoslash
+// 合并相同来源的引用标记
+function mergeDuplicateSources() {
+  const sourceMap = new Map();
+
+  document.querySelectorAll(".source-card").forEach((card) => {
+    const key = card.dataset.url;
+    if (sourceMap.has(key)) {
+      card.remove();
+      sourceMap.get(key).count++;
+    } else {
+      sourceMap.set(key, { element: card, count: 1 });
+    }
+  });
+
+  // 更新标记显示
+  sourceMap.forEach((value, key) => {
+    value.element.querySelector(".source-count").textContent =
+      `被引用 ${value.count} 次`;
+  });
+}
+```
+
+---
 layout: end
 ---
 
