@@ -445,7 +445,7 @@ layout: center
 
 DOM 结构设计
 
-```html {all|4-5|8-16|all} twoslash
+```html {all|5-6|9-17|all} twoslash
 <div class="ai-answer-block">
   <!-- 答案文本 -->
   <p>
@@ -472,7 +472,7 @@ DOM 结构设计
 
 事件处理机制
 
-```js {all|1-3|4|5-6|7-11|15-21|all} twoslash
+```js {all|1-3|4-6|7-8|9-13|15-22|all} twoslash
 // 给每个来源标记添加点击事件
 document.querySelectorAll(".source-marker").forEach((marker) => {
   marker.addEventListener("click", (e) => {
@@ -488,7 +488,6 @@ document.querySelectorAll(".source-marker").forEach((marker) => {
     }
   });
 });
-
 // 来源卡片数据加载
 async function loadSourceCards(ids) {
   const res = await fetch(`/api/sources?ids=${ids}`);
@@ -521,8 +520,8 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-document.querySelectorAll(".ai-answer-block").forEach((segment) => {
-  observer.observe(segment);
+document.querySelectorAll(".ai-answer-block").forEach((block) => {
+  observer.observe(block);
 });
 ```
 
@@ -624,17 +623,17 @@ import ForceGraph from "react-force-graph";
 8.3 更丰富的交互形态
 
 <div v-click="[1,2]">
-  <span>预览 PDF</span>
+  <span>预览 PDF（<a href="https://metaso.cn/">秘塔 AI 搜索</a>）</span>
   <img src="./assets/27.png" class="w-160 h-100 object-contain" />
 </div>
 
 <div v-click="[2,3]">
-  <span>标签与侧边栏联动，类似于手风琴的效果</span>
-  <img src="./assets/28.png" class="w-160 h-100 object-contain" />
+  <span>标签与侧边栏联动，类似于手风琴的效果（<a href="https://metaso.cn/">秘塔 AI 搜索</a>）</span>
+  <img src="./assets/28.png" class="w-160 h-98 object-contain" />
 </div>
 
 <div v-click="3">
-  <span>预览视频</span>
+  <span>预览视频（<a href="https://www.perplexity.ai">Perplexity.ai</a>）</span>
   <div class="flex items-center gap-4">
     <img src="./assets/29.png" class="w-100 h-75 object-contain" />
     <img src="./assets/30.png" class="w-124 h-75 object-contain" />
