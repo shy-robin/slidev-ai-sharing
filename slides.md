@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: ./assets/bg.png
+background: /bg.png
 # some information about your slides (markdown enabled)
 title: AI 搜索
 info: |
@@ -353,7 +353,9 @@ layout: center
 layout: center
 ---
 
-<WordCloud />
+<v-click>
+  <WordCloud />
+</v-click>
 
 ---
 
@@ -648,7 +650,7 @@ import ForceGraph from "react-force-graph";
 </style>
 
 ---
-layout: end
+layout: center
 ---
 
 # Thank You
