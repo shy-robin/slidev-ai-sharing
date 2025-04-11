@@ -527,7 +527,7 @@ document.querySelectorAll(".ai-answer-block").forEach((block) => {
 
 ---
 
-# 7. 哪些地方可以优化？🤔
+# 7. 哪些地方可以优化？
 
 7.2 智能优先级加载
 
@@ -587,6 +587,8 @@ layout: center
 
 8.1 可信度可视化：引入颜色编码、评分系统等直观指标
 
+<v-click>
+
 ```js {all} twoslash
 // 添加可信度指示器
 <div className="source-meta">
@@ -598,11 +600,17 @@ layout: center
 </div>
 ```
 
+<img src="./assets/33.png" class="w-100 h-60 object-contain" />
+
+</v-click>
+
 ---
 
 # 8. 还有一些别的想法？
 
 8.2 关系网络展示：揭示来源之间的引用关联模式（学术论文场景较多，显示引用关系）
+
+<v-click>
 
 ```js {all} twoslash
 // 使用力导向图展示来源关联
@@ -615,6 +623,10 @@ import ForceGraph from "react-force-graph";
   linkDirectionalArrowLength={6}
 />;
 ```
+
+<img src="./assets/34.png" class="w-90 h-60 object-contain" />
+
+</v-click>
 
 ---
 
