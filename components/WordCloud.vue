@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import B2wordcloud from "b2wordcloud";
 
 const chartRef = ref<HTMLElement | null>(null);
+const wordCloud = ref(null);
 
-onMounted(() => {
-  console.log(chartRef.value);
+const initChart = () => {
   chartRef.value &&
-    new B2wordcloud(chartRef.value, {
+    (wordCloud.value = new B2wordcloud(chartRef.value, {
       list: [
         ["夸克", 36],
         ["豆包", 62],
@@ -73,7 +73,25 @@ onMounted(() => {
         "#3aa4ee",
         ["#3aa4ee", "#fff"],
       ],
-    });
+    }));
+};
+
+watch(
+  $slidev,
+  (val) => {
+    const curPage = val.nav.currentPage;
+    if (curPage === 16) {
+      initChart();
+    }
+  },
+  {
+    deep: true,
+    immediate: true,
+  },
+);
+
+onMounted(() => {
+  initChart();
 });
 </script>
 

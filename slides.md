@@ -353,9 +353,7 @@ layout: center
 layout: center
 ---
 
-<v-click>
-  <WordCloud />
-</v-click>
+<WordCloud />
 
 ---
 
