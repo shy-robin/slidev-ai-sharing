@@ -76,20 +76,6 @@ const initChart = () => {
     }));
 };
 
-watch(
-  $slidev,
-  (val) => {
-    const curPage = val.nav.currentPage;
-    if (curPage === 16) {
-      initChart();
-    }
-  },
-  {
-    deep: true,
-    immediate: true,
-  },
-);
-
 onMounted(() => {
   initChart();
 });

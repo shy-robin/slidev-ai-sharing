@@ -353,7 +353,7 @@ layout: center
 layout: center
 ---
 
-<WordCloud />
+<img src="./assets/word-cloud.png" class="w-100 h-100 object-cover" />
 
 ---
 
