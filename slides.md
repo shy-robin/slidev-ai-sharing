@@ -386,7 +386,7 @@ layout: center
     <li v-click="12">
       时间线验证（<a href="https://www.wolframalpha.com">Wolfram Alpha</a>）
     <li v-click="[13,15]">关键事实旁显示“2024年7月最新数据”</li>
-    <li v-click="[14,15]">时间敏感内容添加时钟图标⚠️</li>
+    <li v-click="[14,15]">时间敏感内容添加时钟图标</li>
     </li>
     </li>
     <li v-click="15">
@@ -434,10 +434,10 @@ layout: center
 
 双端差异
 
-| PC 端                                                         | 移动端                                                        |
-| ------------------------------------------------------------- | ------------------------------------------------------------- |
-| 网速稳定，布局宽松，功能精细                                  | 网速波动大，布局紧凑                                          |
-| <img src="./assets/1.png" class="w-80 h-80 object-contain" /> | <img src="./assets/1.png" class="w-80 h-80 object-contain" /> |
+| PC 端                                                          | 移动端                                                         |
+| -------------------------------------------------------------- | -------------------------------------------------------------- |
+| 网速稳定，布局宽松，功能精细                                   | 网速波动大，布局紧凑                                           |
+| <img src="./assets/32.png" class="w-80 h-60 object-contain" /> | <img src="./assets/31.png" class="w-80 h-60 object-contain" /> |
 
 ---
 
