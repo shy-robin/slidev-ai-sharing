@@ -281,7 +281,7 @@ layout: center
 layout: center
 ---
 
-# 3. 聚焦在哪块？
+# 3. 聚焦在哪块？🤔
 
 ---
 layout: center
@@ -311,7 +311,7 @@ layout: center
 layout: center
 ---
 
-# 4. 交叉验证是什么？
+# 4. 交叉验证是什么？🤔
 
 ---
 
@@ -347,7 +347,7 @@ layout: center
 layout: center
 ---
 
-# 5. 交叉验证有哪些形式？
+# 5. 交叉验证有哪些形式？🤔
 
 ---
 layout: center
@@ -426,7 +426,7 @@ layout: center
 layout: center
 ---
 
-# 6. 前端是如何实现的？
+# 6. 前端是如何实现的？🤔
 
 ---
 
@@ -527,7 +527,7 @@ document.querySelectorAll(".ai-answer-block").forEach((block) => {
 
 ---
 
-# 7. 哪些地方可以优化？
+# 7. 哪些地方可以优化？🤔
 
 7.2 智能优先级加载
 
@@ -579,7 +579,7 @@ function mergeDuplicateSources() {
 layout: center
 ---
 
-# 8. 还有一些别的想法？
+# 8. 还有一些别的想法？🤔
 
 ---
 
